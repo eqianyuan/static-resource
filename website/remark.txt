@@ -1,0 +1,5 @@
+login.html                      //登录页面
+register.html                   //注册页面
+resetLR.html                    //重置密码页面
+
+index.html                      //重新
