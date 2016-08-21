@@ -3,3 +3,9 @@ register.html                   //注册页面
 resetLR.html                    //重置密码页面
 
 index.html                      //重新
+search_job.html                 //找工作
+talents_list.html               //招人才
+help.html                       //新手帮助
+complain.html                   //投诉建议
+
+personal.html                   //个人中心

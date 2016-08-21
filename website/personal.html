@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <title>个人中心 - 百百SOHO</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+</head>
+<body class="pt97">
+<!-- header -->
+<div class="header normal">
+    <div class="container">
+        <!-- normal-head -->
+        <div class="normal-head">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="LOGO" />
+            </a>
+            <ul class="lr">
+                <li class="btn-menu"><a href="javascript:;">导航</a></li>
+                <li>
+                    <dl class="head">
+                        <dt><a href="personal.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
+                        <dd>
+                            <a href="personal.html" class="username">Joyce</a>
+                            <a href="javascript:;" class="exit">退出</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="search_job.html">找工作</a></li>
+                <li><a href="talents_list.html">招人才</a></li>
+                <li><a href="help.html">新手帮助</a></li>
+                <li><a href="complain.html">投诉建议</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <!-- /normal-head -->
+    </div>
+</div>
+<!-- /header -->
+<!-- mainer -->
+<div class="mainer personal">
+    <div class="container">
+        <!-- nav-tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#demandInfo" data-toggle="tab">需求信息</a></li>
+            <li><a href="#accountInfo" data-toggle="tab">账户信息</a></li>
+            <li><a href="#enterpriseInfo" data-toggle="tab">企业信息</a></li>
+            <li><a href="#accountAuth" data-toggle="tab">账号认证</a></li>
+        </ul>
+        <!-- /nav-tabs -->
+        <!-- tab-content -->
+        <div class="tab-content">
+            <!-- 需求信息 START -->
+            <div class="tab-pane fade  in active" id="demandInfo">
+                <form action="#" method="post" class="personal demandInfo-form">
+                    <table class="demandInfo">
+                        <tr>
+                            <th>需求岗位：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="demandJob" value="" /></p><i class="red">*</i></td>
+                        </tr>
+                        <tr>
+                            <th>到岗时间：</th>
+                            <td>
+                                <p class="ipt-txt wd415">
+                                    <select name="arriveTime">
+                                        <option value="">请选择</option>
+                                        <option value="一周内">一周内</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>招聘人次：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="inviteTime" value="" /></p></td>
+                        </tr>
+                        <tr>
+                            <th>工作时间：</th>
+                            <td>
+                                <p class="ipt-txt wd200"><input type="text" name="startTime" value="" /></p>
+                                <p class="ipt-txt wd200"><input type="text" name="endTime" value="" /></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>任务周期：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="taskCycle" value="" /></p> 月</td>
+                        </tr>
+                        <tr>
+                            <th>薪资待遇：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="salary" value="" /></p> 月</td>
+                        </tr>
+                        <tr>
+                            <th>性别需求：</th>
+                            <td>
+                                <p class="ipt-txt wd415">
+                                    <select name="gender">
+                                        <option value="">不限</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>工作餐：</th>
+                            <td>
+                                <p class="ipt-txt wd415">
+                                    <select name="workLunch">
+                                        <option value="">不限</option>
+                                        <option value="有">有</option>
+                                        <option value="无">无</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>工作内容：</th>
+                            <td><p class="ipt-txt"><textarea class="workContent" placeholder="请描述任务需求主要职责，需要掌握哪些技能。"></textarea></p></td>
+                        </tr>
+                        <tr>
+                            <th>工作地址：</th>
+                            <td>
+                                <p class="ipt-txt wd200">
+                                    <select name="prov">
+                                        <option value="">请选择</option>
+                                        <option value="江苏省">江苏省</option>
+                                        <option value="安徽省">安徽省</option>
+                                    </select>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <select name="city">
+                                        <option value="">请选择</option>
+                                        <option value="南京市">南京市</option>
+                                        <option value="苏州市">苏州市</option>
+                                    </select>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <select name="dist">
+                                        <option value="">请选择</option>
+                                        <option value="白下区">白下区</option>
+                                        <option value="鼓楼区">鼓楼区</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>联系人：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="contact" value="" /></p></td>
+                        </tr>
+                        <tr>
+                            <th>联系电话：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="contactPhone" value="" /></p></td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td><div class="error"></div></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="ipt-submit">发布需求</button>
+                </form>
+            </div>
+            <!-- 需求信息 END -->
+            <!-- 账户信息 START -->
+            <div class="tab-pane fade" id="accountInfo">
+                账户信息
+            </div>
+            <!-- 账户信息 END -->
+            <!-- 企业信息 START -->
+            <div class="tab-pane fade" id="enterpriseInfo">
+                <form action="#" method="post" class="personal enterprise-form">
+                    <div class="enterprise-top">
+                        <div class="left">
+                            <dl>
+                                <dt><img src="images/personal/logo.png" alt="1" /></dt>
+                                <dd>
+                                    <input type="hidden" name="headImageUrl" value="" id="headImageUrl" />
+                                    <h3>Joyce</h3>
+                                    <div class="radio-box">
+                                        <p class="ipt-radio"><input type="radio" name="iPay" value="支付宝" />绑定支付宝</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="right">
+                            <dl>
+                                <dt>企业平均评分：</dt>
+                                <dd>
+                                    <p class="star star_03">80分</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <table class="demandInfo">
+                        <tr>
+                            <th>企业名称：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="companyName" value="" /></p><i class="red">*</i></td>
+                        </tr>
+                        <tr>
+                            <th>企业性质：</th>
+                            <td>
+                                <p class="ipt-txt wd415">
+                                    <select name="companyProp">
+                                        <option value="">请选择</option>
+                                        <option value="国有">国有</option>
+                                        <option value="私营">私营</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>企业规模：</th>
+                            <td>
+                                <p class="ipt-txt wd415">
+                                    <select name="companyProp">
+                                        <option value="">请选择</option>
+                                        <option value="微型">微型(0-10人)</option>
+                                        <option value="微中型">微中型(10-50)人</option>
+                                        <option value="中型">中型(50-100)人</option>
+                                        <option value="大型">大型(<100)人</option>
+                                        <option value="超大型">超大型(<1000)人</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>联系电话：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="contactPhone" value="" /></p></td>
+                        </tr>
+                        <tr>
+                            <th>工作地址：</th>
+                            <td>
+                                <p class="ipt-txt wd200">
+                                    <select name="prov">
+                                        <option value="">请选择</option>
+                                        <option value="江苏省">江苏省</option>
+                                        <option value="安徽省">安徽省</option>
+                                    </select>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <select name="city">
+                                        <option value="">请选择</option>
+                                        <option value="南京市">南京市</option>
+                                        <option value="苏州市">苏州市</option>
+                                    </select>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <select name="dist">
+                                        <option value="">请选择</option>
+                                        <option value="白下区">白下区</option>
+                                        <option value="鼓楼区">鼓楼区</option>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>具体地址：</th>
+                            <td><p class="ipt-txt wd415"><input type="text" name="address" value="" /></p></td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td><div class="error"></div></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="ipt-submit">修改信息完成</button>
+                </form>
+            </div>
+            <!-- 企业信息 END -->
+            <!-- 账号认证 START -->
+            <div class="tab-pane fade" id="accountAuth">
+                账号认证
+            </div>
+            <!-- 账号认证 END -->
+        </div>
+        <!-- /tab-content -->
+    </div>
+</div>
+<!-- /mainer -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <!-- f-left -->
+        <div class="f-left">
+            <div class="bottom-link">
+                <a href="javascript:;">新手引导</a>
+                <a href="javascript:;">安全条款</a>
+                <a href="javascript:;">服务协议</a>
+                <a href="javascript:;">加入我们</a>
+                <a href="javascript:;">投资合作</a>
+            </div>
+            <div class="copy-right">
+                ©百百Soho.com  南京驿乾元信息技术有限公司  京ICP证110507号  京ICP备10046444号
+            </div>
+            <div class="f-link">
+                <a href="javascript:;"><img src="images/link_01.png" alt="1" /></a>
+                <a href="javascript:;"><img src="images/link_02.png" alt="2" /></a>
+            </div>
+        </div>
+        <!-- /f-left -->
+        <!-- f-right -->
+        <div class="f-right">
+            <div class="bottom-table">
+                <div class="cell">
+                    <div class="QR-code">
+                        <img src="images/code.png" alt="二维码" />
+                    </div>
+                </div>
+                <div class="cell">
+                    <h2>客服热线：025-84242551</h2>
+                    <p>周一至周六 9:00-20:30</p>
+                    <p>（仅收市话费）</p>
+                    <p class="email">投诉邮箱：Liuchao2016617@163.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- /f-right -->
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- /footer -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.method.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/package/personal.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/bootstrap/html5shiv.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>

@@ -8,7 +8,7 @@ $(function(){
         wrapper: "p",
         ignore: ".ignore",
         submitHandler:function(form){
-            alert("注册提交事件!");
+            alert("重置提交事件!");
             form.submit();
         },
         rules : {
@@ -33,7 +33,7 @@ $(function(){
         wrapper: "p",
         ignore: ".ignore",
         submitHandler:function(form){
-            alert("注册提交事件!");
+            alert("重置提交事件!");
             form.submit();
         },
         rules : {
