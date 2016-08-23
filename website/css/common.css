@@ -5,7 +5,7 @@ body.pt97{ padding-top: 97px; }
 
 /*头部*/
 div.header{ width:100%; padding:45px 0; background-color: #FFF; }
-div.header.normal{ padding: 20px 0; border-bottom: 2px solid #7335b0; position: fixed; left:0; top: 0; z-index: 10000;  }
+div.header.normal{ padding: 20px 0; border-bottom: 2px solid #7335b0; position: fixed; left:0; top: 0; z-index: 1000;  }
 div.header .lr-logo{ width:325px; }
 div.header a.left-logo{ display: block; width:210px; float:left; }
 div.header .left-logo img{ width:100%; }
@@ -259,8 +259,8 @@ div.enterprise-top .right{ float:right; }
 
 div.enterprise-top .left dl{ display:block; float:left; }
 div.enterprise-top .left dl dt, div.enterprise-top .left dl dd{ float:left; }
-div.enterprise-top .left dl dt{ width:88p; height:88px; text-align:center; overflow:hidden; border:1px solid #DDD; }
-div.enterprise-top .left dl dt img{ width:100%; min-height:100%; }
+div.enterprise-top .left dl dt{ width:88px; height:88px; text-align:center; overflow:hidden; border:1px solid #DDD; }
+div.enterprise-top .left dl dt img, div.enterprise-top .left dl dt canvas{ width:100%; min-height:100%; }
 div.enterprise-top .left dl dd{ padding-left:15px; }
 div.enterprise-top .left h3{ font-size: 18px; color: #4c4c54; margin-bottom: 15px; }
 
@@ -285,6 +285,18 @@ div.enterprise-top .right dl dd p.star.star_05{ background-image: url('../images
 
 
 
+
+
+
+
+
+
+
+
+/**/
+iframe#uploadImageFrame{ width: 100%; height: 420px;  }
+.modal-content{ margin-top: 50px; }
+div.modal-body{ padding: 30px; }
 
     /*底部*/
 div.footer{ width: 100%; padding: 35px 0; border-top: 1px solid #DEE2E7; background-color: #f8f9fb; }

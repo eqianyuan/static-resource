@@ -178,7 +178,9 @@
                     <div class="enterprise-top">
                         <div class="left">
                             <dl>
-                                <dt><img src="images/personal/logo.png" alt="1" /></dt>
+                                <dt data-toggle="modal" data-target="#uploadImage" id="viewHeadBox"><img
+                                        src="images/personal/logo.png" alt="1"
+                                /></dt>
                                 <dd>
                                     <input type="hidden" name="headImageUrl" value="" id="headImageUrl" />
                                     <h3>Joyce</h3>
@@ -325,6 +327,18 @@
     </div>
 </div>
 <!-- /footer -->
+<!-- -->
+<!-- uploadImage -->
+<div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe src="uploadImage.html" id="uploadImageFrame" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /uploadImage -->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>

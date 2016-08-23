@@ -43,6 +43,9 @@ $(function(){
     demandInfoVerify();         //调用需求信息校验函数
     enterpriseInfoVerify();    //调用企业信息校验函数
 
+    $('#uploadImage').modal('hide');
+
+    //radio
     $('div.radio-box p.ipt-radio').click(function(){
         var _input = $(this).find('input[type=radio]');
         $('div.radio-box p.ipt-radio').removeClass('active');
