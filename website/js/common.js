@@ -25,4 +25,5 @@ $(function(){
     $('li.btn-menu').click(function(){
         $('div.normal-head ul.nav').slideToggle();
     });
+    $('<div id=systemMsgWrap>').load('systemMsg.html').appendTo('body');
 });

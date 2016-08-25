@@ -1,11 +1,18 @@
-login.html                      //登录页面
-register.html                   //注册页面
-resetLR.html                    //重置密码页面
+login.html                      //登录页面                  OK
+register.html                   //注册页面                  OK
+resetLR.html                    //重置密码页面              OK
 
-index.html                      //重新
-search_job.html                 //找工作
-talents_list.html               //招人才
+index.html                      //首页                      OK
+search_job.html                 //找工作                    OK
+talents_list.html               //招人才                    OK
+job_detail.html                 //详情页                    OK
 help.html                       //新手帮助
 complain.html                   //投诉建议
 
 personal.html                   //个人中心
+
+workbench.html                  //我的工作台
+
+myResume.html                   //我的简历
+
+systemMsg.html                  //系统消息

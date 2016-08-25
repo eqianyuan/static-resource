@@ -27,7 +27,14 @@
                         <dt><a href="personal.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
                         <dd>
                             <a href="personal.html" class="username">Joyce</a>
-                            <a href="javascript:;" class="exit">退出</a>
+                            <ul class="top-menu">
+                                <li><a href="workbench.html">我的工作</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="personal.html">个人信息</a></li>
+                                <li><a href="myResume.html">我的简历</a></li>
+                                <li><a href="javascript:;" data-toggle="modal" data-target="#systemMsg">系统消息</a></li>
+                                <li><a href="javascript:;" class="exit">退出</a></li>
+                            </ul>
                         </dd>
                     </dl>
                 </li>
@@ -84,8 +91,8 @@
                         <tr>
                             <th>工作时间：</th>
                             <td>
-                                <p class="ipt-txt wd200"><input type="text" name="startTime" value="" /></p>
-                                <p class="ipt-txt wd200"><input type="text" name="endTime" value="" /></p>
+                                <p class="ipt-txt wd200"><input type="text" name="startTime" class="workTime startJob" value="" placeholder="上班时间"/></p>
+                                <p class="ipt-txt wd200"><input type="text" name="endTime"  class="workTime endJob" value="" placeholder="下班时间"/></p>
                             </td>
                         </tr>
                         <tr>
@@ -345,6 +352,10 @@
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.method.js"></script>
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.datepicker.zh.js"></script>
+
 <script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/package/personal.js"></script>

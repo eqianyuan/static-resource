@@ -27,7 +27,14 @@
                         <dt><a href="personal.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
                         <dd>
                             <a href="personal.html" class="username">Joyce</a>
-                            <a href="javascript:;" class="exit">退出</a>
+                            <ul class="top-menu">
+                                <li><a href="workbench.html">我的工作</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="personal.html">个人信息</a></li>
+                                <li><a href="myResume.html">我的简历</a></li>
+                                <li><a href="javascript:;" data-toggle="modal" data-target="#systemMsg">系统消息</a></li>
+                                <li><a href="javascript:;" class="exit">退出</a></li>
+                            </ul>
                         </dd>
                     </dl>
                 </li>
@@ -53,7 +60,422 @@
 <!-- mainer -->
 <div class="mainer pd30">
     <div class="container">
-        mainer
+        <form action="#" method="post" class="search-form">
+            <input type="hidden" name="jobCity" id="jobCity" value="" />            <!-- 城市 -->
+            <input type="hidden" name="jobType" id="jobType" value="" />            <!-- 职位类别 -->
+            <input type="hidden" name="hotsArea" id="hotsArea" value="" />          <!-- 热门地区 -->
+            <input type="hidden" name="experience" id="experience" value="" />      <!-- 工作经验 -->
+            <input type="hidden" name="matching" id="matching" value="" />          <!-- 匹配度 -->
+            <input type="hidden" name="arriveTime" id="arriveTime" value="" />      <!-- 到岗时间 -->
+            <input type="hidden" name="orderBy" id="orderBy" value="" />            <!-- 排序 -->
+        </form>
+        <!-- talents-top -->
+        <div class="talents-top">
+            <dl>
+                <dt>城市：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="jobCity" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="jobCity" data-value="南京">南京</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>职位类别：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="jobType" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="jobType" data-value="Unity">Unity</a>
+                        <a href="javascript:;" data-target="jobType" data-value="Unity游戏">Unity游戏</a>
+                        <a href="javascript:;" data-target="jobType" data-value="Unity演示">Unity演示</a>
+                        <a href="javascript:;" data-target="jobType" data-value="Java工程师">Java工程师</a>
+                        <a href="javascript:;" data-target="jobType" data-value="Php工程师">Php工程师</a>
+                        <a href="javascript:;" data-target="jobType" data-value="游戏原画师">游戏原画师</a>
+                        <a href="javascript:;" data-target="jobType" data-value="动画原画师">动画原画师</a>
+                        <a href="javascript:;" data-target="jobType" data-value="前端工程师">前端工程师</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>热门地区：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="hotsArea" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="hotsArea" data-value="白下区">白下区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="下关区">下关区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="鼓楼区">鼓楼区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="秦淮区">秦淮区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="玄武区">玄武区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="浦口区">浦口区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="六合区">六合区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="栖霞区">栖霞区</a>
+                        <a href="javascript:;" data-target="hotsArea" data-value="高淳区">高淳区</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>工作经验：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="experience" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="experience" data-value="1年以下">1年以下</a>
+                        <a href="javascript:;" data-target="experience" data-value="1-3年">1-3年</a>
+                        <a href="javascript:;" data-target="experience" data-value="3-5年">3-5年</a>
+                        <a href="javascript:;" data-target="experience" data-value="5-10年">5-10年</a>
+                        <a href="javascript:;" data-target="experience" data-value="10年以上">10年以上</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>任职匹配度：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="matching" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="matching" data-value="0-25%">0-25%</a>
+                        <a href="javascript:;" data-target="matching" data-value="25-50%">25-50%</a>
+                        <a href="javascript:;" data-target="matching" data-value="50-75%">50-75%</a>
+                        <a href="javascript:;" data-target="matching" data-value="75-100%">75-100%</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>到岗时间：</dt>
+                <dd class="wd80">
+                    <a href="javascript:;" data-target="arriveTime" data-value="" class="allSelect act">不限</a>
+                </dd>
+                <dd>
+                    <div class="tt-list">
+                        <a href="javascript:;" data-target="arriveTime" data-value="一周内">一周内</a>
+                        <a href="javascript:;" data-target="arriveTime" data-value="两周内">两周内</a>
+                        <a href="javascript:;" data-target="arriveTime" data-value="三周内">三周内</a>
+                        <a href="javascript:;" data-target="arriveTime" data-value="四周内">四周内</a>
+                        <a href="javascript:;" data-target="arriveTime" data-value="一个月后">一个月后</a>
+                    </div>
+                </dd>
+                <dd class="wd80">
+                    <a href="javascript:;" class="more">更多</a>
+                </dd>
+            </dl>
+        </div>
+        <!-- /talents-top -->
+        <!-- talents-order -->
+        <dl class="talents-order">
+            <dt>排序：</dt>
+            <dd>
+                <a href="javascript:;" class="act" data-target="orderBy" data-value="">默认顺序</a>
+                <a href="javascript:;" data-target="orderBy" data-value="任职匹配度">任职匹配度</a>
+                <a href="javascript:;" data-target="orderBy" data-value="工作经验">工作经验</a>
+                <a href="javascript:;" data-target="orderBy" data-value="到岗时间">到岗时间</a>
+            </dd>
+        </dl>
+        <!-- /talents-order -->
+        <!-- talents-list -->
+        <div class="talents-list">
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+                <dl>
+                    <dt>
+                        <a href="job_detail.html" class="tit">Unity程序员</a>
+                        <span class="grade">综合评分：<span class="orange">80分</span></span>
+                    </dt>
+                </dl>
+                <dl>
+                    <dd class="wd">
+                        <p class="pd8">熟悉软件</p>
+                        <p>
+                            <span class="sw-icon"><img src="images/talents/t_01.png" alt="1" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_02.png" alt="2" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_03.png" alt="3" /></span>
+                            <span class="sw-icon"><img src="images/talents/t_04.png" alt="4" /></span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">工作年限</p>
+                        <p class="ageLimit"><span class="orange large">3</span><span class="gray">年</span></p>
+                    </dd>
+                    <dd>
+                        <p class="pd8">期望薪资</p>
+                        <p><span class="orange large">2001-4000</span><span class="gray">元</span></p>
+                    </dd>
+                    <dd>
+                        <p>擅长方向：
+                            <span class="gray pdt5">PC游戏</span>
+                            <span class="gray pdt5 pd5">手游</span>
+                            <span class="gray pdt5">虚拟现实</span>
+                            <span class="gray pdt5">房产广告</span>
+                            <span class="gray pdt5">网站建设</span>
+                        </p>
+                    </dd>
+                    <dd>
+                        <p>工作周期：<span class="gray">不限</span></p>
+                        <p>工作地点：<span class="gray">白下区</span></p>
+                        <p>工作时间：<span class="gray">8h 不限早晚</span></p>
+                    </dd>
+                    <dd><a href="javascript:;" class="btn-buy">接受订购</a></dd>
+                </dl>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /talents-list -->
+        <!-- paging -->
+        <div class="paging">
+            <a>首页</a>
+            <a>上一页</a>
+            <a href="javascript:;" class="act">1</a>
+            <a href="javascript:;">2</a>
+            <a href="javascript:;">3</a>
+            <a href="javascript:;">4</a>
+            <span>...</span>
+            <a href="javascript:;">200</a>
+            <a href="javascript:;">下一页</a>
+            <a href="javascript:;">尾页</a>
+        </div>
+        <!-- /paging -->
     </div>
 </div>
 <!-- /mainer -->
@@ -107,9 +529,9 @@
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
 <script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/package/search_job.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/bootstrap/html5shiv.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/respond.min.js"></script>
-<![endif]-->
 </body>
 </html>

@@ -1,4 +1,5 @@
 @import "bootstrap.min.css";
+@import "jquery-ui.min.css";
 @import "base.css";
 
 body.pt97{ padding-top: 97px; }
@@ -53,8 +54,20 @@ div.header dl.head dt a img{ max-width: 95%; min-height: 100%; position: relativ
 div.header dl.head dt a span{ display: block; width: 100%; height: 100%; background: url('../images/bg_head.png') no-repeat center; position: absolute; top: 0; left: 0; z-index: 10; }
 div.header dl.head dd{ padding-right: 8px; background: url('../images/down.png') no-repeat right center; position: relative; }
 div.header dl.head dd a.username{}
+/*
 div.header dl.head dd a.exit{ display:none; position:absolute; top:35px; right:0; z-index:100; text-align:center; white-space:nowrap; padding:3px 12px !important; margin:0; font-size:14px; border:1px solid #DDD !important; }
 div.header dl.head dd:hover a.exit{ display:inline-block; }
+*/
+
+div.header dl.head dd  ul.top-menu{ white-space:nowrap; background-color: #FFF; position:absolute; top:36px; left:0; border:1px solid #DDD; box-shadow:0px 0px 2px rgba(0, 0, 0, .1); display: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+div.header dl.head dd  ul.top-menu li{ width:100%; padding:5px 10px; border-bottom:1px solid #DDD;}
+div.header dl.head dd  ul.top-menu li:hover{ background-color: #cb63de; }
+div.header dl.head dd  ul.top-menu li a{ font-size:14px !important; color:#4c4c54 !important; }
+div.header dl.head dd:hover ul.top-menu{ display:block; }
 
     /*登录区域*/
 div.lr-wrapper{ width:100%; overflow:hidden; position:relative; }
@@ -85,7 +98,7 @@ form.forms a.telCode{ line-height:42px; text-align:center; font-size:14px; backg
 form.forms a.telCode:hover{  text-decoration: none; }
 
 form.forms label{ font-weight: normal; display: inline-block; vertical-align: middle; cursor: pointer; }
-form.forms input[type=checkbox]{ }
+form.forms input[type=checkbox]{ display: inline-block; width: auto;  }
 
 form.forms div.error{ width: 100%; height: 20px; overflow: hidden; color: #F00; margin-bottom: 10px; }
 form.forms div.error.reg-error{ display:inline-block; width:auto; position:absolute; right:15px; margin-bottom: 0; }
@@ -251,6 +264,11 @@ form.personal button.ipt-submit{ padding: 15px 52px; color: #FFF; background-col
 }
 form.personal div.error{ width: 100%; height: 20px; overflow: hidden; color: #F00; margin-bottom: 10px; }
 
+form.personal input.workTime{ padding-left: 35px !important; background: url('../images/personal/time.png') no-repeat 10px center; }
+
+
+
+
 /*enterprise-top*/
 div.enterprise-top{ border-bottom:1px solid #DDD; padding:10px 0 30px; margin-bottom:30px; }
 div.enterprise-top .left, div.enterprise-top .right{}
@@ -281,7 +299,22 @@ div.enterprise-top .right dl dd p.star.star_03{ background-image: url('../images
 div.enterprise-top .right dl dd p.star.star_04{ background-image: url('../images/personal/start_04.png');}
 div.enterprise-top .right dl dd p.star.star_05{ background-image: url('../images/personal/start_05.png');}
 
+/*工作详情页*/
+table.job-detail{ width:100%; }
+table.job-detail thead th{ border-bottom:1px solid #e0e4e9; text-align:right; padding:15px 0; }
+table.job-detail thead th:first-child{ text-align:left; }
+table.job-detail thead h3{ font-size:18px; color:#4c4c54; font-weight:normal; white-space:nowrap;  }
+table.job-detail thead a.bnt-apply{ color:#FFF; background-color:#7335b0; padding:8px 28px; font-size: 14px; font-weight: normal; cursor: pointer; }
+table.job-detail tbody th, table.job-detail tbody td{ padding:15px 5px 10px 15px; border-bottom:1px solid #f6f8fb; font-size:14px; }
+table.job-detail tbody th{ white-space:nowrap; font-weight:normal; text-align:right; color:#4c4c54; }
+table.job-detail tbody td{ color:#9199a0; }
 
+/*系统消息*/
+div.systemMsg-box{ width:100%;}
+div.systemMsg-box .sb-title{ text-align:center; font-size:18px; }
+div.systemMsg-box ul.sb-list{ width:100%; line-height:42px; margin:20px 0; }
+div.systemMsg-box ul.sb-list li{ border-bottom:1px solid #DDD; }
+div.systemMsg-box .paging{ }
 
 
 
