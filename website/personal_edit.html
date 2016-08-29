@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <title>个人中心 - 个人信息编辑 - 百百SOHO</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+</head>
+<body class="pt97">
+<!-- header -->
+<div class="header normal">
+    <div class="container">
+        <!-- normal-head -->
+        <div class="normal-head">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="LOGO" />
+            </a>
+            <ul class="lr">
+                <li class="btn-menu"><a href="javascript:;">导航</a></li>
+                <li>
+                    <dl class="head">
+                        <dt><a href="personal_edit.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
+                        <dd>
+                            <a href="personal_edit.html" class="username">Joyce</a>
+                            <ul class="top-menu">
+                                <li><a href="workbench.html">我的工作</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="personal_edit.html">个人信息</a></li>
+                                <li><a href="myResume.html">我的简历</a></li>
+                                <li><a href="javascript:;" data-toggle="modal" data-target="#systemMsg">系统消息</a></li>
+                                <li><a href="javascript:;" class="exit">退出</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="search_job.html">找工作</a></li>
+                <li><a href="talents_list.html">招人才</a></li>
+                <li><a href="help.html">新手帮助</a></li>
+                <li><a href="complain.html">投诉建议</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <!-- /normal-head -->
+    </div>
+</div>
+<!-- /header -->
+<!-- mainer -->
+<div class="mainer personal">
+    <div class="container">
+        <!-- nav-tabs -->
+        <ul class="nav nav-tabs">
+            <li><a href="personal_work.html">我的工作</a></li>
+            <li><a href="personal_info.html">账户信息</a></li>
+            <li class="active"><a href="personal_edit.html">个人信息</a></li>
+            <li><a href="personal_comment.html">过往评价</a></li>
+        </ul>
+        <!-- /nav-tabs -->
+        <!-- tab-content -->
+        <div class="tab-content">
+            <!-- 需求信息 START -->
+            <div class="tab-pane fade  in active" id="demandInfo">
+                <!-- enterprise-top -->
+                <div class="enterprise-top">
+                    <div class="left">
+                        <dl>
+                            <dt data-toggle="modal" data-target="#uploadImage" id="viewHeadBox"><img src="images/personal/logo.png" alt="1"/></dt>
+                            <dd>
+                                <input type="hidden" name="headImageUrl" value="" id="headImageUrl" />
+                                <h3>Joyce</h3>
+                                <div class="radio-box">
+                                    <p class="ipt-radio active"><input type="radio" name="iPay" value="支付宝" checked />绑定支付宝</p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="right">
+                        <dl>
+                            <dt>企业平均评分：</dt>
+                            <dd>
+                                <p class="star star_03">80分</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /enterprise-top -->
+                <!-- personal-form -->
+                <form action="#" method="post" class="personal personal-form">
+                    <table class="enterprise-base-info">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <h2>基本信息</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <!-- 基本信息 -->
+                        <tbody>
+                            <tr class="pd-none">
+                                <th></th>
+                                <td style="padding-top: 20px;"><div class="error warn-error wd420"></div></td>
+                            </tr>
+                            <tr>
+                                <th>姓名：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="userName" value="" placeholder="请输入真实姓名" /></p>
+                                    <i class="warn-star fl">*</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>性别：</th>
+                                <td>
+                                    <div class="radio-box">
+                                        <p class="ipt-radio mr20">男<input type="radio" name="gender" value="" checked /></p>
+                                        <p class="ipt-radio">女<input type="radio" name="gender" value="" /></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>出生日期：</th>
+                                <td>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="birth-year"  readonly value="1989" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="1989">1989</li>
+                                                <li data-value="1990">1990</li>
+                                                <li data-value="1991">1991</li>
+                                                <li data-value="1992">1992</li>
+                                                <li data-value="1993">1993</li>
+                                                <li data-value="1994">1994</li>
+                                                <li data-value="1995">1995</li>
+                                                <li data-value="1996">1996</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="birth-month"  readonly value="2" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="1">1</li>
+                                                <li data-value="2">1</li>
+                                                <li data-value="3">1</li>
+                                                <li data-value="4">1</li>
+                                                <li data-value="5">1</li>
+                                                <li data-value="6">1</li>
+                                                <li data-value="7">1</li>
+                                                <li data-value="8">1</li>
+                                                <li data-value="9">1</li>
+                                                <li data-value="10">10</li>
+                                                <li data-value="11">11</li>
+                                                <li data-value="12">12</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 fl">
+                                        <input type="text" name="birth-day"  readonly value="5" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="1">1</li>
+                                                <li data-value="2">1</li>
+                                                <li data-value="3">1</li>
+                                                <li data-value="4">1</li>
+                                                <li data-value="5">1</li>
+                                                <li data-value="6">1</li>
+                                                <li data-value="7">1</li>
+                                                <li data-value="8">1</li>
+                                                <li data-value="9">1</li>
+                                                <li data-value="10">10</li>
+                                                <li data-value="11">11</li>
+                                                <li data-value="12">12</li>
+                                                <li data-value="12">13</li>
+                                                <li data-value="12">14</li>
+                                                <li data-value="12">15</li>
+                                                <li data-value="12">16</li>
+                                                <li data-value="12">17</li>
+                                                <li data-value="12">18</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>身份证：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="identityCard" value="" /></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>是否毕业：</th>
+                                <td>
+                                    <div class="radio-box">
+                                        <p class="ipt-radio mr20">毕业<input type="radio" name="graduate" value="" checked/></p>
+                                        <p class="ipt-radio">未毕业<input type="radio" name="graduate" value="" /></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>学历：</th>
+                                <td>
+                                    <div class="ipt-select wd420">
+                                        <input type="text" name="birth-day"  readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="大专">大专</li>
+                                                <li data-value="本科">本科</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>学校名称：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="schoolName" value="" /></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>专业：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="major" value="" /></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>在校时间：</th>
+                                <td>
+                                    <p class="ipt-txt wd200 mr10"><input type="text" name="graduateStartTime" class="graduateStartTime schoolTime" value="" placeholder="入学日期"/></p>
+                                    <p class="ipt-txt wd200"><input type="text" name="graduateEndTime" class="graduateEndTime schoolTime" value="" placeholder="毕业日期"/></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>籍贯：</th>
+                                <td>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="native-pro"  readonly value="江苏省" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="江苏省">江苏省</li>
+                                                <li data-value="安徽省">安徽省</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 fl">
+                                        <input type="text" name="native-city"  readonly value="南京市" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="南京市">南京市</li>
+                                                <li data-value="江苏省">江苏省</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>现居住地：</th>
+                                <td>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="now-pro"  readonly value="江苏省" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="江苏省">江苏省</li>
+                                                <li data-value="安徽省">安徽省</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="now-city"  readonly value="南京市" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="南京市">南京市</li>
+                                                <li data-value="江苏省">江苏省</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 fl">
+                                        <input type="text" name="now-dist"  readonly value="白下区" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="白下区">白下区</li>
+                                                <li data-value="玄武区">玄武区</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="ipt-txt wd420 mt15"><textarea class="tta" name="nowHouse" placeholder="请输入现居住详细地址"></textarea></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pl-btn-box">
+                        <button type="submit" name="submit" class="btn">修改信息完成</button>
+                        <button type="button" name="perfect" class="btn">完善简历</button>
+                        <p class="desc">完善简历才可以参与工作哦！</p>
+                    </div>
+                </form>
+                <!-- /personal-form -->
+                <!-- bottom-form  -->
+                <form action="#" method="" class="personal bottom-form">
+                    <table class="enterprise-base-info">
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pd-none">
+                                <th></th>
+                                <td style="padding-top: 20px;"><div class="error warn-error wd420"></div></td>
+                            </tr>
+                            <tr>
+                                <th>所处行业：</th>
+                                <td>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="state1" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="Unity 3D设计师">Unity 3D设计师</li>
+                                                <li data-value="软件工程师">软件工程师</li>
+                                                <li data-value="美术设计师">美术设计师</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="state2" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="UI">UI</li>
+                                                <li data-value="特效">特效</li>
+                                                <li data-value="场景模型">场景模型</li>
+                                                <li data-value="角色动画">角色动画</li>
+                                                <li data-value="程序设计">程序设计</li>
+                                                <li data-value="UI">UI</li>
+                                                <li data-value="特效">特效</li>
+                                                <li data-value="场景模型">场景模型</li>
+                                                <li data-value="角色动画">角色动画</li>
+                                                <li data-value="程序设计">程序设计</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 fl">
+                                        <input type="text" name="state3" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="角色动画">角色动画</li>
+                                                <li data-value="程序设计">程序设计</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>联系邮箱：</th>
+                                <td><p class="ipt-txt wd420 fl"><input type="text" name="email" value="" /></p></td>
+                            </tr>
+                            <tr>
+                                <th>联系方式：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="contact" value="" /></p>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>工作时间：</th>
+                                <td>
+                                    <div class="ipt-select wd420">
+                                        <input type="text" name="jobTime" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="AM9:00-12:00 ~ PM1:00-6:00">AM9:00-12:00 ~ PM1:00-6:00</li>
+                                                <li data-value="PM6:00-10:00">PM6:00-10:00</li>
+                                                <li data-value="面议">面议</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>工作经验：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="workExperience" value="" /></p>
+                                    <p class="unit fl">年</p>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>薪资待遇：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="compensation" value="" /></p>
+                                    <p class="unit fl">月</p>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>外语能力：</th>
+                                <td>
+                                    <div class="ipt-select wd420">
+                                        <input type="text" name="foreign" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="不限">不限</li>
+                                                <li data-value="一年">一年</li>
+                                                <li data-value="两年及以上">两年及以上</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody id="workExperience">
+                            <tr data-flag="0">
+                                <th>工作经历：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="experience" value="" /></p>
+                                    <button type="button" class="btn btn-delete" data-target="0">删除</button>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr data-flag="0">
+                                <th>负责岗位：</th>
+                                <td>
+                                    <p class="ipt-txt wd670 fl"><textarea name="station" class="tta" placeholder="请描述在公司的岗位职责。"></textarea></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="pd-none">
+                                <th>&nbsp;</th>
+                                <td><p class="ipt-txt wd670 ttr"><button type="button" id="btn-experience" class="btn btn-add">添加工作经历</button></p></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="addProject">
+                            <tr data-flag="0">
+                                <th>参与项目：</th>
+                                <td>
+                                    <p class="ipt-txt wd420 fl"><input type="text" name="project" value="" /></p>
+                                    <button type="button" class="btn btn-delete" data-target="0">删除</button>
+                                    <i class="warn-star">*</i>
+                                </td>
+                            </tr>
+                            <tr data-flag="0">
+                                <th>负责模块：</th>
+                                <td>
+                                    <p class="ipt-txt wd670 fl"><textarea name="module" class="tta" placeholder="请描述在此项目负责的部分。"></textarea></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                        <tr class="pd-none">
+                            <th>&nbsp;</th>
+                            <td><p class="ipt-txt wd670 ttr"><button type="button" id="btn-addProject" class="btn btn-add">添加项目</button></p></td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>擅长语言：</th>
+                                <td>
+                                    <ul class="progress-list" id="selectLanguage">
+                                        <li data-value="30" data-max="100" data-name="Php">
+                                            <div class="progress-tit fl">Php</div>
+                                            <div class="progress fl"></div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li data-value="50" data-max="100" data-name="Java">
+                                            <div class="progress-tit fl">Java</div>
+                                            <div class="progress fl"></div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li data-value="20" data-max="100" data-name="Ios">
+                                            <div class="progress-tit fl">Ios</div>
+                                            <div class="progress fl"></div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li data-value="70" data-max="100" data-name="Android">
+                                            <div class="progress-tit fl">Android</div>
+                                            <div class="progress fl"></div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>海外经历：</th>
+                                <td><p class="ipt-txt wd420 fl"><input type="text" name="overseas" value="" /></p></td>
+                            </tr>
+                            <tr>
+                                <th>培训经历：</th>
+                                <td><p class="ipt-txt wd420 fl"><input type="text" name="train" value="" /></p></td>
+                            </tr>
+                            <tr>
+                                <th>项目倾向：</th>
+                                <td><p class="ipt-txt wd420 fl"><textarea class="tta" name="projectTrend"></textarea></p></td>
+                            </tr>
+                            <tr>
+                                <th>工作地点：</th>
+                                <td>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="work-pro" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="江苏">江苏</li>
+                                                <li data-value="安徽">安徽</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 mr10 fl">
+                                        <input type="text" name="work-city" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="南京">南京</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-select wd200 fl">
+                                        <input type="text" name="work-dist" readonly value="" />
+                                        <div class="select-list">
+                                            <ul>
+                                                <li data-value="江宁区">江宁区</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a href="javascript:;" class="ipt-select-okay">确定</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <p class="ipt-txt wd420 mt15 fl"><textarea class="tta" name="work-address" placeholder="请输入工作详细地址"></textarea></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pl-btn-box">
+                        <button type="submit" class="btn">发布简历</button>
+                    </div>
+                </form>
+                <!-- /bottom-form  -->
+            </div>
+            <!-- 需求信息 END -->
+        </div>
+        <!-- /tab-content -->
+    </div>
+</div>
+<!-- /mainer -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <!-- f-left -->
+        <div class="f-left">
+            <div class="bottom-link">
+                <a href="javascript:;">新手引导</a>
+                <a href="javascript:;">安全条款</a>
+                <a href="javascript:;">服务协议</a>
+                <a href="javascript:;">加入我们</a>
+                <a href="javascript:;">投资合作</a>
+            </div>
+            <div class="copy-right">
+                ©百百Soho.com  南京驿乾元信息技术有限公司  京ICP证110507号  京ICP备10046444号
+            </div>
+            <div class="f-link">
+                <a href="javascript:;"><img src="images/link_01.png" alt="1" /></a>
+                <a href="javascript:;"><img src="images/link_02.png" alt="2" /></a>
+            </div>
+        </div>
+        <!-- /f-left -->
+        <!-- f-right -->
+        <div class="f-right">
+            <div class="bottom-table">
+                <div class="cell">
+                    <div class="QR-code">
+                        <img src="images/code.png" alt="二维码" />
+                    </div>
+                </div>
+                <div class="cell">
+                    <h2>客服热线：025-84242551</h2>
+                    <p>周一至周六 9:00-20:30</p>
+                    <p>（仅收市话费）</p>
+                    <p class="email">投诉邮箱：Liuchao2016617@163.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- /f-right -->
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- /footer -->
+<!-- -->
+<!-- uploadImage -->
+<div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe src="pop/uploadImage.html" id="uploadImageFrame" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /uploadImage -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.method.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.datepicker.zh.js"></script>
+
+<script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/package/personal_edit.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/bootstrap/html5shiv.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="renderer" content="webkit">
     <meta charset="utf-8">
-    <title>我的工作台 - 百百SOHO</title>
+    <title>个人中心 - 百百SOHO</title>
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css" />
@@ -57,137 +57,21 @@
     <div class="container">
         <!-- nav-tabs -->
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#demandInfo">需求信息</a></li>
-            <li><a href="#accountInfo">账户信息</a></li>
-            <li><a href="#enterpriseInfo">企业信息</a></li>
-            <li><a href="#accountAuth">账号认证</a></li>
+            <li><a href="company_demand.html">需求信息</a></li>
+            <li><a href="javascript:;">账户信息</a></li>
+            <li class="active"><a href="company.html">企业信息</a></li>
+            <li><a href="javascript:;">账号认证</a></li>
         </ul>
         <!-- /nav-tabs -->
         <!-- tab-content -->
         <div class="tab-content">
-            <!-- 需求信息 START -->
-            <div class="tab-pane fade  in active" id="demandInfo">
-                <form action="#" method="post" class="personal demandInfo-form">
-                    <table class="demandInfo">
-                        <tr>
-                            <th>需求岗位：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="demandJob" value="" /></p><i class="red">*</i></td>
-                        </tr>
-                        <tr>
-                            <th>到岗时间：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="arriveTime">
-                                        <option value="">请选择</option>
-                                        <option value="一周内">一周内</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>招聘人次：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="inviteTime" value="" /></p></td>
-                        </tr>
-                        <tr>
-                            <th>工作时间：</th>
-                            <td>
-                                <p class="ipt-txt wd200"><input type="text" name="startTime" class="workTime startJob" value="" placeholder="上班时间"/></p>
-                                <p class="ipt-txt wd200"><input type="text" name="endTime"  class="workTime endJob" value="" placeholder="下班时间"/></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>任务周期：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="taskCycle" value="" /></p> 月</td>
-                        </tr>
-                        <tr>
-                            <th>薪资待遇：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="salary" value="" /></p> 月</td>
-                        </tr>
-                        <tr>
-                            <th>性别需求：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="gender">
-                                        <option value="">不限</option>
-                                        <option value="男">男</option>
-                                        <option value="女">女</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>工作餐：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="workLunch">
-                                        <option value="">不限</option>
-                                        <option value="有">有</option>
-                                        <option value="无">无</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>工作内容：</th>
-                            <td><p class="ipt-txt"><textarea class="workContent" placeholder="请描述任务需求主要职责，需要掌握哪些技能。"></textarea></p></td>
-                        </tr>
-                        <tr>
-                            <th>工作地址：</th>
-                            <td>
-                                <p class="ipt-txt wd200">
-                                    <select name="prov">
-                                        <option value="">请选择</option>
-                                        <option value="江苏省">江苏省</option>
-                                        <option value="安徽省">安徽省</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="city">
-                                        <option value="">请选择</option>
-                                        <option value="南京市">南京市</option>
-                                        <option value="苏州市">苏州市</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="dist">
-                                        <option value="">请选择</option>
-                                        <option value="白下区">白下区</option>
-                                        <option value="鼓楼区">鼓楼区</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>联系人：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="contact" value="" /></p></td>
-                        </tr>
-                        <tr>
-                            <th>联系电话：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="contactPhone" value="" /></p></td>
-                        </tr>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <td><div class="error"></div></td>
-                        </tr>
-                    </table>
-                    <button type="submit" class="ipt-submit">发布需求</button>
-                </form>
-            </div>
-            <!-- 需求信息 END -->
-            <!-- 账户信息 START -->
-            <div class="tab-pane fade" id="accountInfo">
-                账户信息
-            </div>
-            <!-- 账户信息 END -->
             <!-- 企业信息 START -->
-            <div class="tab-pane fade" id="enterpriseInfo">
+            <div class="tab-pane fade  in active" id="enterpriseInfo">
                 <form action="#" method="post" class="personal enterprise-form">
                     <div class="enterprise-top">
                         <div class="left">
                             <dl>
-                                <dt data-toggle="modal" data-target="#uploadImage" id="viewHeadBox"><img
-                                        src="images/personal/logo.png" alt="1"
-                                /></dt>
+                                <dt data-toggle="modal" data-target="#uploadImage" id="viewHeadBox"><img src="images/personal/logo.png" alt="1"/></dt>
                                 <dd>
                                     <input type="hidden" name="headImageUrl" value="" id="headImageUrl" />
                                     <h3>Joyce</h3>
@@ -282,11 +166,6 @@
                 </form>
             </div>
             <!-- 企业信息 END -->
-            <!-- 账号认证 START -->
-            <div class="tab-pane fade" id="accountAuth">
-                账号认证
-            </div>
-            <!-- 账号认证 END -->
         </div>
         <!-- /tab-content -->
     </div>
@@ -334,19 +213,31 @@
     </div>
 </div>
 <!-- /footer -->
+<!-- -->
+<!-- uploadImage -->
+<div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe src="pop/uploadImage.html" id="uploadImageFrame" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /uploadImage -->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.method.js"></script>
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
-<s
+
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.datepicker.zh.js"></script>
 
 <script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/package/workbench.js"></script>
+<script type="text/javascript" src="js/package/company.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/bootstrap/html5shiv.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/respond.min.js"></script>

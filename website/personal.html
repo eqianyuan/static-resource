@@ -24,13 +24,13 @@
                 <li class="btn-menu"><a href="javascript:;">导航</a></li>
                 <li>
                     <dl class="head">
-                        <dt><a href="personal.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
+                        <dt><a href="personal_edit.html"><img src="images/img_01.png" alt="head" /><span></span></a></dt>
                         <dd>
-                            <a href="personal.html" class="username">Joyce</a>
+                            <a href="personal_edit.html" class="username">Joyce</a>
                             <ul class="top-menu">
                                 <li><a href="workbench.html">我的工作</a></li>
                                 <li>&nbsp;</li>
-                                <li><a href="personal.html">个人信息</a></li>
+                                <li><a href="personal_edit.html">个人信息</a></li>
                                 <li><a href="myResume.html">我的简历</a></li>
                                 <li><a href="javascript:;" data-toggle="modal" data-target="#systemMsg">系统消息</a></li>
                                 <li><a href="javascript:;" class="exit">退出</a></li>
@@ -57,236 +57,171 @@
     <div class="container">
         <!-- nav-tabs -->
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#demandInfo" data-toggle="tab">需求信息</a></li>
-            <li><a href="#accountInfo" data-toggle="tab">账户信息</a></li>
-            <li><a href="#enterpriseInfo" data-toggle="tab">企业信息</a></li>
-            <li><a href="#accountAuth" data-toggle="tab">账号认证</a></li>
+            <li><a href="personal_work.html">我的工作</a></li>
+            <li><a href="personal_info.html">账户信息</a></li>
+            <li class="active"><a href="personal_edit.html">个人信息</a></li>
+            <li><a href="personal_comment.html">过往评价</a></li>
         </ul>
         <!-- /nav-tabs -->
         <!-- tab-content -->
         <div class="tab-content">
             <!-- 需求信息 START -->
             <div class="tab-pane fade  in active" id="demandInfo">
-                <form action="#" method="post" class="personal demandInfo-form">
-                    <table class="demandInfo">
+                <!-- enterprise-top -->
+                <div class="enterprise-top">
+                    <div class="resume-top left">
+                        <dl>
+                            <dt><a class="head"><img src="images/personal/logo.png" alt="1"/></a></dt>
+                            <dd>
+                                <h3>王百百简历</h3>
+                                <p>UI设计师 中级</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /enterprise-top -->
+                <table class="resume">
+                    <thead>
                         <tr>
-                            <th>需求岗位：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="demandJob" value="" /></p><i class="red">*</i></td>
+                            <th colspan="4">
+                                <h3>个人信息</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>姓名：</th>
+                            <td class="gray">王百百</td>
+                            <th>性别：</th>
+                            <td class="gray">男</td>
                         </tr>
                         <tr>
-                            <th>到岗时间：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="arriveTime">
-                                        <option value="">请选择</option>
-                                        <option value="一周内">一周内</option>
-                                    </select>
-                                </p>
-                            </td>
+                            <th>工作年限：</th>
+                            <td class="gray">5年</td>
+                            <th>期望月薪：</th>
+                            <td class="gray">7000-9000</td>
                         </tr>
                         <tr>
-                            <th>招聘人次：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="inviteTime" value="" /></p></td>
-                        </tr>
-                        <tr>
+                            <th>工作地点：</th>
+                            <td class="gray">江苏省 南京市 白下区</td>
                             <th>工作时间：</th>
-                            <td>
-                                <p class="ipt-txt wd200"><input type="text" name="startTime" class="workTime startJob" value="" placeholder="上班时间"/></p>
-                                <p class="ipt-txt wd200"><input type="text" name="endTime"  class="workTime endJob" value="" placeholder="下班时间"/></p>
+                            <td class="gray">AM9:00-12:00至PM01:30-06:00</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h3>其它信息</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>毕业院校：</th>
+                            <td class="gray">南京理工大学</td>
+                            <th>学历：</th>
+                            <td class="gray">本科</td>
+                        </tr>
+                        <tr>
+                            <th>专业：</th>
+                            <td class="gray">计算机</td>
+                            <th>海外经历：</th>
+                            <td class="gray">元</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h3>软件技能</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <ul class="progress-list" id="selectLanguage">
+                                    <li data-value="30" data-max="100" data-name="Php">
+                                        <div class="progress-tit fl">Php</div>
+                                        <div class="progress fl"></div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li data-value="50" data-max="100" data-name="Java">
+                                        <div class="progress-tit fl">Java</div>
+                                        <div class="progress fl"></div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li data-value="20" data-max="100" data-name="Ios">
+                                        <div class="progress-tit fl">Ios</div>
+                                        <div class="progress fl"></div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li data-value="70" data-max="100" data-name="Android">
+                                        <div class="progress-tit fl">Android</div>
+                                        <div class="progress fl"></div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
+                    </tbody>
+                    <thead>
                         <tr>
-                            <th>任务周期：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="taskCycle" value="" /></p> 月</td>
+                            <th colspan="4">
+                                <h3>工作经历</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">2001-2002:</th>
+                            <td colspan="3"><p>江苏省广电集团有限公司 &nbsp;&nbsp; UI设计师</p></td>
                         </tr>
                         <tr>
-                            <th>薪资待遇：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="salary" value="" /></p> 月</td>
+                            <td colspan="3" class="desc gray"><p>描述可点开，出详细信息</p></td>
                         </tr>
                         <tr>
-                            <th>性别需求：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="gender">
-                                        <option value="">不限</option>
-                                        <option value="男">男</option>
-                                        <option value="女">女</option>
-                                    </select>
-                                </p>
-                            </td>
+                            <th rowspan="2">2002-2004:</th>
+                            <td colspan="3"><p江苏省电力公司 &nbsp;&nbsp; UI设计师</p></td>
                         </tr>
                         <tr>
-                            <th>工作餐：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="workLunch">
-                                        <option value="">不限</option>
-                                        <option value="有">有</option>
-                                        <option value="无">无</option>
-                                    </select>
-                                </p>
-                            </td>
+                            <td colspan="3" class="desc gray"><p>负责公司电子大屏设计 </p></td>
                         </tr>
                         <tr>
-                            <th>工作内容：</th>
-                            <td><p class="ipt-txt"><textarea class="workContent" placeholder="请描述任务需求主要职责，需要掌握哪些技能。"></textarea></p></td>
+                            <th rowspan="2">2001-2002:</th>
+                            <td colspan="3"><p>江苏省奇奇有限公司 &nbsp;&nbsp; UI设计师</p></td>
                         </tr>
                         <tr>
-                            <th>工作地址：</th>
-                            <td>
-                                <p class="ipt-txt wd200">
-                                    <select name="prov">
-                                        <option value="">请选择</option>
-                                        <option value="江苏省">江苏省</option>
-                                        <option value="安徽省">安徽省</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="city">
-                                        <option value="">请选择</option>
-                                        <option value="南京市">南京市</option>
-                                        <option value="苏州市">苏州市</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="dist">
-                                        <option value="">请选择</option>
-                                        <option value="白下区">白下区</option>
-                                        <option value="鼓楼区">鼓楼区</option>
-                                    </select>
-                                </p>
-                            </td>
+                            <td colspan="3" class="desc gray"><p>同上</p></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h3>项目经历</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">2001.5-6:</th>
+                            <td colspan="3"><p>华为 Hi game APP &nbsp;&nbsp;</p></td>
                         </tr>
                         <tr>
-                            <th>联系人：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="contact" value="" /></p></td>
+                            <td colspan="3" class="desc gray"><p>负责项目中的哪一块 </p></td>
                         </tr>
                         <tr>
-                            <th>联系电话：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="contactPhone" value="" /></p></td>
+                            <th rowspan="2">2003.10-2004.12:</th>
+                            <td colspan="3"><p>华为 Hi game APP &nbsp;&nbsp;</p></td>
                         </tr>
                         <tr>
-                            <th>&nbsp;</th>
-                            <td><div class="error"></div></td>
+                            <td colspan="3" class="desc gray"><p>界面设计&nbsp;&nbsp; 图标设计&nbsp;&nbsp; banner设计
+                                &nbsp;&nbsp;切图`标注&nbsp;&nbsp;视觉规范编写 </p></td>
                         </tr>
-                    </table>
-                    <button type="submit" class="ipt-submit">发布需求</button>
-                </form>
+                    </tbody>
+                </table>
             </div>
             <!-- 需求信息 END -->
-            <!-- 账户信息 START -->
-            <div class="tab-pane fade" id="accountInfo">
-                账户信息
-            </div>
-            <!-- 账户信息 END -->
-            <!-- 企业信息 START -->
-            <div class="tab-pane fade" id="enterpriseInfo">
-                <form action="#" method="post" class="personal enterprise-form">
-                    <div class="enterprise-top">
-                        <div class="left">
-                            <dl>
-                                <dt data-toggle="modal" data-target="#uploadImage" id="viewHeadBox"><img
-                                        src="images/personal/logo.png" alt="1"
-                                /></dt>
-                                <dd>
-                                    <input type="hidden" name="headImageUrl" value="" id="headImageUrl" />
-                                    <h3>Joyce</h3>
-                                    <div class="radio-box">
-                                        <p class="ipt-radio"><input type="radio" name="iPay" value="支付宝" />绑定支付宝</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="right">
-                            <dl>
-                                <dt>企业平均评分：</dt>
-                                <dd>
-                                    <p class="star star_03">80分</p>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <table class="demandInfo">
-                        <tr>
-                            <th>企业名称：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="companyName" value="" /></p><i class="red">*</i></td>
-                        </tr>
-                        <tr>
-                            <th>企业性质：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="companyProp">
-                                        <option value="">请选择</option>
-                                        <option value="国有">国有</option>
-                                        <option value="私营">私营</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>企业规模：</th>
-                            <td>
-                                <p class="ipt-txt wd415">
-                                    <select name="companyProp">
-                                        <option value="">请选择</option>
-                                        <option value="微型">微型(0-10人)</option>
-                                        <option value="微中型">微中型(10-50)人</option>
-                                        <option value="中型">中型(50-100)人</option>
-                                        <option value="大型">大型(<100)人</option>
-                                        <option value="超大型">超大型(<1000)人</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>联系电话：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="contactPhone" value="" /></p></td>
-                        </tr>
-                        <tr>
-                            <th>工作地址：</th>
-                            <td>
-                                <p class="ipt-txt wd200">
-                                    <select name="prov">
-                                        <option value="">请选择</option>
-                                        <option value="江苏省">江苏省</option>
-                                        <option value="安徽省">安徽省</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="city">
-                                        <option value="">请选择</option>
-                                        <option value="南京市">南京市</option>
-                                        <option value="苏州市">苏州市</option>
-                                    </select>
-                                </p>
-                                <p class="ipt-txt wd200">
-                                    <select name="dist">
-                                        <option value="">请选择</option>
-                                        <option value="白下区">白下区</option>
-                                        <option value="鼓楼区">鼓楼区</option>
-                                    </select>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>具体地址：</th>
-                            <td><p class="ipt-txt wd415"><input type="text" name="address" value="" /></p></td>
-                        </tr>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <td><div class="error"></div></td>
-                        </tr>
-                    </table>
-                    <button type="submit" class="ipt-submit">修改信息完成</button>
-                </form>
-            </div>
-            <!-- 企业信息 END -->
-            <!-- 账号认证 START -->
-            <div class="tab-pane fade" id="accountAuth">
-                账号认证
-            </div>
-            <!-- 账号认证 END -->
         </div>
         <!-- /tab-content -->
     </div>
@@ -334,18 +269,6 @@
     </div>
 </div>
 <!-- /footer -->
-<!-- -->
-<!-- uploadImage -->
-<div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <iframe src="uploadImage.html" id="uploadImageFrame" scrolling="no" frameborder="0"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /uploadImage -->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>

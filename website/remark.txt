@@ -1,18 +1,26 @@
-login.html                      //登录页面                  OK
-register.html                   //注册页面                  OK
-resetLR.html                    //重置密码页面              OK
+login.html                      //登录页面                  OK  1
+register.html                   //注册页面                  OK  2
+resetLR.html                    //重置密码页面              OK  3
 
-index.html                      //首页                      OK
-search_job.html                 //找工作                    OK
+index.html                      //首页                      OK  4
+search_job.html                 //找工作                    OK  5
 talents_list.html               //招人才                    OK
-job_detail.html                 //详情页                    OK
+job_detail.html                 //详情页                    OK  6
 help.html                       //新手帮助
 complain.html                   //投诉建议
 
-personal.html                   //个人中心
+personal.html                   //个人信息                  O   7
+personal_edit.html              //信息编辑                  OK  8
+personal_work.html              //我的工作                  OK  9
+personal_info.html              //账户信息                  OK  10
+personal_comment.html           //过往评价                  OK  11
+
+company.html                    //企业信息                  OK  12
+company_demand.html             //需示信息                  OK  13
+company_demand_list.html        //需示信息                  OK  14
+company_demand_manage.html      //需求管理                  OK  15
+company_work_bill.html          //工作账单                  OK  16
 
 workbench.html                  //我的工作台
-
 myResume.html                   //我的简历
-
-systemMsg.html                  //系统消息
+systemMsg.html                  //系统消息                  OK
