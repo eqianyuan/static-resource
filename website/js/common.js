@@ -95,6 +95,11 @@ $(function(){
     $('li.btn-menu').click(function(){
         $('div.normal-head ul.nav').slideToggle();
     });
+    $(window).resize(function(){
+        if($('div.normal-head ul.nav').is(':hidden') && $(window).width() > 1030){
+            $('div.normal-head ul.nav').show();
+        }
+    });
     //系统消息
     $('<div id=systemMsgWrap>').load('pop/systemMsg.html').appendTo('body');
     $('<div id=qrCodeWrap>').load('pop/payCode.html').appendTo('body');

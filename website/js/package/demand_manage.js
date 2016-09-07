@@ -44,11 +44,46 @@ function editApplyForm(){
     });
 }
 
+//时间设置
+function setWorkTime(start, end){
+    var graduateStartTime = $(start).datepicker({
+        onClose : function(selectDate){
+
+            graduateEndTime.datepicker( "option", "minDate", selectDate );
+        }
+    });                //加载日期控件
+    var graduateEndTime = $(end).datepicker({
+        onClose : function(selectDate){
+            graduateStartTime.datepicker( "option", "maxDate", selectDate );
+        }
+    });
+}
+
+function employment(){
+    $('#employment').modal('show');
+
+    $(document).on('click', 'div.select-check ul li[data-value]', function(){
+        var _value = $(this).data('value');
+        $(this).parents('div.select-check').find('input[type=text]').val(_value).end().find('div.select-list').slideUp();
+    });
+}
+
 $(function(){
+    //设置时间
+    $('td.setWork input.times').each(function(){
+        $(this).datetimepicker({
+            language : 'zh-CN',
+            format: 'yyyy-mm-dd hh:ii',
+            minuteStep : 2                      //分钟间隔2分钟
+        });
+    });
+
+
     //取消
     $(document).on('click', 'form.relieveDeal button.btn-cancel', function(){
         $('#relieveDeal').modal('hide');
     });
+
 
     //报到列表
     $(document).on('click', 'a#btn-toggle-apply', function(){
@@ -84,4 +119,5 @@ $(function(){
 
     fixSelect();
     editApplyForm();
+    employment();
 });

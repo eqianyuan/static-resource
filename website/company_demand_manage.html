@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <title>个人中心 - 需求管理 - 百百SOHO</title>
     <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css" />
     <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css" />
     <![endif]-->
@@ -421,6 +422,150 @@
 </div>
 <!-- /footer -->
 <!-- -->
+<!-- employment -->
+<div class="modal fade" id="employment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog wd560">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- relieveDeal -->
+                <form action="#" method="post" class="personal employment-form">
+                    <table>
+                        <tr>
+                            <th>日期天：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期一：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期二：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期三：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期四：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期五：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>星期六：</th>
+                            <td class="setWork">
+                                <p class="ipt-txt wd200 mr10">
+                                    <span class="unit">AM</span>
+                                    <input type="text" name="startTime" class="times startTime" value="" placeholder=""/>
+                                </p>
+                                <p class="ipt-txt wd200">
+                                    <span class="unit">PM</span>
+                                    <input type="text" name="endTime" class="times endTime" value="" placeholder=""/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>上岗时间；</th>
+                            <td>
+                                <div class="ipt-select select-check wd200 mr10 fl">
+                                    <input type="text" name="month" readonly value="" />
+                                    <div class="select-list">
+                                        <div class="b-tit">上岗月份</div>
+                                        <ul class="select-month">
+                                            <li data-value="一月">一月</li>
+                                            <li data-value="二月">二月</li>
+                                            <li data-value="三月">三月</li>
+                                            <li data-value="四月">四月</li>
+                                            <li data-value="五月">五月</li>
+                                            <li data-value="六月">六月</li>
+                                            <li data-value="七月">七月</li>
+                                            <li data-value="八月">八月</li>
+                                            <li data-value="九月">九月</li>
+                                            <li data-value="十月">十月</li>
+                                            <li data-value="十一月">十一月</li>
+                                            <li data-value="十二月">十二月</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ipt-select select-check wd200 fl">
+                                    <input type="text" name="after" readonly value="" />
+                                    <div class="select-list">
+                                        <ul class="select-time">
+                                            <li data-value="上午">上午</li>
+                                            <li data-value="下午">下午</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btn-box">
+                        <button type="submit" class="btn">确定</button>
+                    </div>
+                </form>
+                <!-- /relieveDeal -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /employment -->
 <!-- relieveDeal -->
 <div class="modal fade" id="relieveDeal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog wd380">
@@ -690,16 +835,15 @@
     </div>
 </div>
 <!-- /editApplyDialog -->
-
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.method.js"></script>
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
-
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/jquery.datepicker.zh.js"></script>
 
 <script type="text/javascript" src="js/jquery.extends.1.0.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
